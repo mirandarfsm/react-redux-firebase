@@ -7,7 +7,7 @@ import Header from '../Header/Header'
 export const PageLayout = ({ children }) => (
   <div>
     <Header />
-    <div className='container'>
+    <div className='container my-2'>
       {children}
     </div>
   </div>

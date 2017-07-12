@@ -3,15 +3,13 @@ import DuckImage from '../assets/Duck.jpg'
 import './Duck.scss'
 
 export const Duck = () => (
-    <div>
-        <div className='col-sm-3 col-md-3'>
-            <div className='thumbnail'>
-                <img src='Duck.jpg' className='duck' alt='...' />
-                <div className='caption'>
-                    <h3>Teste</h3>
-                    <span>fodd</span>
-                    <p>Bla bla</p>
-                </div>
+    <div className='col-sm-3 col-md-3'>
+        <div className="card">
+            <img src="Duck.jpg" className="card-img-top duck" alt="..." />
+            <div className="card-block">
+                <h3 className="card-title">Title</h3>
+                <h6 className="card-subtitle mb-2 text-muted">Subtitle</h6>
+                <p className="card-text">Text</p>
             </div>
         </div>
     </div>

@@ -5,7 +5,7 @@ import Duck from './Duck'
 
 export class HomeView extends React.Component {
   render () {
-    const ducks = [0,1,2,3].map(() => <Duck />) 
+    const ducks = [0,1,2,3].map((id,index) => <Duck key={index} />) 
     return (
       <div>
         <div className='jumbotron'>
@@ -22,7 +22,7 @@ export class HomeView extends React.Component {
         <div className='row'>
             <div className='col-sm-12 col-md-12 text-center'>
                 <h3 className=''>Perto de você</h3>
-                <p><i className='glyphicon glyphicon-chevron-down'></i></p>
+                <p><i className="fa fa-chevron-down" aria-hidden="true"></i></p>
                 <br />
             </div>
         </div>
